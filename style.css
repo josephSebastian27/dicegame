@@ -1,0 +1,132 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Lobster&family=Poppins:wght@100;400&display=swap');
+  /* font-family: 'Caveat', cursive; */
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Lobster&family=Poppins:wght@100;400&family=Tektur&display=swap');
+  /* font-family: 'Caveat', cursive; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #900C3F;
+}
+
+.header{
+    font-family: 'lobster',cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #630328;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 7rem;
+    font-family: 'Lobster', cursive;
+    color: #4ECCA3;
+    text-shadow: 5px 5px black;
+    text-align: center;
+}
+
+.players{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    font-family: 'caveat' ,cursive;
+    gap:7rem;
+}
+
+.dice{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.dice *{
+    margin-top: 20px;
+    width:12rem;
+}
+img{
+    box-shadow: 3px 5px 5px black;
+}
+
+.btn{
+    text-align: center;
+}
+button{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #630328;
+    width: 100px;
+    box-shadow: 5px 5px black;
+}
+button:hover{
+    background-color: white;
+    color: #630328;
+}
+button:active{
+    color: #630328;
+    background-color: #4ECCA3;
+}
+footer{
+display: grid;
+place-items: center;
+    font-size: 1rem;
+    color: white;
+    margin-top: 50px;
+    height: 60px;
+    background-color: #630328;
+}
+
+    /* position: absolute;
+    top: 50%;                                  ----  item centering method
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    /* /* display:grid;
+    place-items:center;                         ----  item centering method */
+
+
+    @media (max-width: 390px){
+        footer{
+            margin-top: 140px;
+            width: 100%;
+        }
+        h1{
+            font-size: 3.5rem;
+            margin-top: 90px;
+            text-align: center;
+        }
+        .dice{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .dice *{
+            margin-top: 20px;
+            width:8rem;
+        }
+        .players{
+            gap: 9.7px;
+        }
+        button{
+            margin-top: 80px;
+        }
+
+        .header{
+            font-size: 1rem;
+            font-family: 'lobster',cursive;
+        }
+    }
